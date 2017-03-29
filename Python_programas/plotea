@@ -1,0 +1,11 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+temp=np.array(dataTemp)
+t=np.array(np.arange(np.size(temp)))
+
+plt.plot(t,temp,'ro')
+plt.grid('on')
+plt.ylabel('Temperatura Celcius')
+plt.xlabel('tiempo en minutos')
+plt.show()

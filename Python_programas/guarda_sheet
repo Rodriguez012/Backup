@@ -1,0 +1,12 @@
+import xlsxwriter
+
+workbook = xlsxwriter.Workbook('arrays2.xlsx')
+worksheet = workbook.add_worksheet()
+row=0
+col=0
+#tem es el vector de temperaturas
+for i in np.arange(np.size(tem)):
+	worksheet.write(row, col, tem[i])
+	row=row+1
+
+workbook.close()
